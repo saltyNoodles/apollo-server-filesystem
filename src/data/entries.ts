@@ -16,7 +16,7 @@ const exists = promisify(fs.exists);
 const writeFile = promisify(fs.writeFile);
 
 // Set the root data directory. This should be broken out eventually, but is fine hard-coded here for now.
-const dataRoot = `${__dirname}/../../output/entries`;
+const dataRoot = `${__dirname}/../../content/entries`;
 
 // Get a single entry by the slug/filename
 export const getEntry = async (slug: string) => {
