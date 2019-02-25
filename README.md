@@ -9,6 +9,7 @@ In your terminal run the following commands to get started:
 1. `git clone https://github.com/saltyNoodles/apollo-server-filesystem.git` to clone the project on your machine
 2. `cd apollo-server-filesystem` to move into the project directory
 3. `yarn` or `npm install` to install all dependencies
+4. `yarn start` to start the development server
 
 ### Prerequisites
 
