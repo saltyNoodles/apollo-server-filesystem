@@ -29,6 +29,8 @@ In your terminal run the following commands:
 
 5. `yarn start --dropbox` or `npm run start --dropbox` to start the development server
 
+For more information on using the Dropbox API, check out the [Dropbox API Docs](https://www.dropbox.com/developers/documentation/http/overview)
+
 ### Prerequisites
 
 To run the project locally, you need a few things already installed on your machine.
