@@ -2,7 +2,7 @@
 
 This is an example project using Apollo Server to query and store data on the filesystem.
 
-## Contents
+## Table of Contents
 
 - [Apollo Server Filesystem Example](#apollo-server-filesystem-example)
 
