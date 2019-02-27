@@ -1,6 +1,8 @@
+require('dotenv').config();
 import { ApolloServer, gql } from 'apollo-server';
 
 import { allEntries, getEntry, createEntry, updateEntry } from './data/entries';
+// import { allEntries, getEntry, createEntry, updateEntry } from './data/entries-dropbox';
 
 // Define all of the graphql types
 // In a larger project, this should probably be broken out into its own file.
