@@ -2,6 +2,17 @@
 
 This is an example project using Apollo Server to query and store data on the filesystem.
 
+## Contents
+
+- [Apollo Server Filesystem Example](#apollo-server-filesystem-example)
+
+  - [Getting Started](#getting-started)
+    - [Running the local filesystem example](#running-the-local-filesystem-example)
+    - [Running the Dropbox example](#running-the-dropbox-example)
+    - [Prerequisites](#prerequisites)
+  - [Built With](#built-with)
+  - [License](#license)
+
 ## Getting Started
 
 ### Running the local filesystem example
