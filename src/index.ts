@@ -1,8 +1,11 @@
 require('dotenv').config();
 import { ApolloServer, gql } from 'apollo-server';
 
-import { allEntries, getEntry, createEntry, updateEntry } from './data/entries';
-// import { allEntries, getEntry, createEntry, updateEntry } from './data/entries-dropbox';
+import { useDropbox } from './cli';
+import * as Entries from './data/entries';
+import * as DropboxEntries from './data/entries-dropbox';
+
+const { allEntries, getEntry, createEntry, updateEntry } = useDropbox() ? DropboxEntries : Entries;
 
 // Define all of the graphql types
 // In a larger project, this should probably be broken out into its own file.
@@ -60,5 +63,9 @@ const resolvers = {
 const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen(process.env.PORT || 4001).then(({ url }) => {
-  console.log(`✔ Server running on ${url}`);
+  if (useDropbox()) {
+    console.log(`Dropbox example running on ${url}`);
+  } else {
+    console.log(`Local filesystem example running on ${url}`);
+  }
 });

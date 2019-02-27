@@ -19,17 +19,15 @@ In your terminal run the following commands:
 2. `cd apollo-server-filesystem` to move into the project directory
 3. `yarn` or `npm install` to install all dependencies
 4. Create a new file in the root called `.env` with and paste in the following:
+
    ```
    DROPBOX_ACCESS_TOKEN = YOUR_ACCESS_TOKEN_HERE
    DROPBOX_CONTENT_DIRECTORY = 'graphql-filesystem-example'
    ```
+
    **Be sure to replace `YOUR_ACCESS_TOKEN_HERE` with your actual Dropbox access token**
-5. In index.ts comment out line 4 and uncomment line 5 like so:
-   ```js
-   // import { allEntries, getEntry, createEntry, updateEntry } from './data/entries';
-   import { allEntries, getEntry, createEntry, updateEntry } from './data/entries-dropbox';
-   ```
-6. `yarn start` or `npm run start` to start the development server
+
+5. `yarn start --dropbox` or `npm run start --dropbox` to start the development server
 
 ### Prerequisites
 
