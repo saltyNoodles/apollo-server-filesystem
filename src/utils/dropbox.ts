@@ -5,7 +5,7 @@ import * as path from 'path';
 export const DROPBOX_ACCESS_TOKEN = process.env.DROPBOX_ACCESS_TOKEN;
 export const CONTENT_DIRECTORY = process.env.DROPBOX_CONTENT_DIRECTORY || 'graphql-filesystem-example';
 
-export const getSingleFile = async filename => {
+export const getSingleFile = async (filename: string) => {
   try {
     const res = await axios.post('https://content.dropboxapi.com/2/files/download', null, {
       headers: {
